@@ -20,7 +20,7 @@ spec:
         name: say-what
         env:
         - name: RESPONSE_MESSAGE
-          value: "hello from service 3"
+          value: "hello from service 2"
         livenessProbe:
           httpGet:
             path: /
@@ -59,4 +59,3 @@ spec:
       - path: /service3
         backend:
           serviceName: service3
-          servicePort: 80
